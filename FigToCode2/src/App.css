@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: NeueMachinareg;
+  src: url(./assets/NeueMachina-Regular.otf);
+}
+
+@font-face {
+  font-family: NeueMachinaLight;
+  src: url(./assets/NeueMachina-Light.otf);
+}
+
+@font-face {
+  font-family: NeueMachinaUltra;
+  src: url(./assets/NeueMachina-Ultrabold.otf);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: NeueMachinareg;
+  color: black;
+  font-style: bold;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: NeueMachinaLight;
+  color: black;
+  font-size: 18px;
+}
+
+input {
+  font-family: NeueMachinaLight;
+  color: #151515;
+  background-color: #ffffff;
+  border: solid 1px #151515;
+  max-width: 182.28px;
+  height: 52px;
   text-align: center;
+  padding: 0;
+  left: 0%;
+  right: 41.42%;
+  top: 0%;
+  bottom: 0%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-family: NeueMachinareg;
+  background-color: black;
+  font-size: 18px;
+  align-self: center;
+  width: 131.72px;
+  height: 52px;
+  left: 58.58%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+form {
+  display: flex;
+  justify-content: center;
 }
 
-.card {
-  padding: 2em;
+.paymentIcon {
+  display: flex;
+  justify-content: space-around;
 }
 
-.read-the-docs {
-  color: #888;
+/* About us Component styles */
+
+.subTitle {
+  text-align: center;
+  max-width: 108px;
+}
+
+p {
+  font-family: NeueMachinaUltra;
+  color: black;
+  font-size: 14px;
+}
+
+ul {
+  padding: 16px;
+  list-style-type: square;
+  color: black;
+}
+
+.how ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
