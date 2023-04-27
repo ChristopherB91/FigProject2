@@ -18,7 +18,7 @@ function Header() {
         A better way to manage your sales, team, clients & marketing — on a
         single platform. Powerful, affordable & easy.
       </h3>
-      <form action="required">
+      <form>
         <input type="email" placeholder="Enter your email" />
         <button>Get Started</button>
       </form>

@@ -9,26 +9,31 @@ const list_items: {
   image: string;
   heading: string;
   text: string;
+  key: number;
 }[] = [
   {
     image: `${cloud}`,
     heading: "Shared Cloud Libraries",
     text: "Navigate to the Your work panel in the left sidebar. Select the library you want to share. Select the Share icon in the upper right to share the library.",
+    key: 1,
   },
   {
     image: `${dev}`,
     heading: "Free developer handoff, right inside",
     text: "Cloud Inspector makes it easy for developers to get the information they need to turn pixels into code — all in the browser and, most importantly, for free.",
+    key: 2,
   },
   {
     image: `${edit}`,
     heading: "Real-time collabo-rative editing",
     text: "Room Service helps you build real-time collaborative features. Add real-time data sync! Let users edit the same data at the same time.",
+    key: 3,
   },
   {
     image: `${cloud_api}`,
     heading: "Integrations with the Cloud API",
     text: "Unlocking that value requires an iPaaS that delivers the transformative power of APIs and integration.",
+    key: 4,
   },
 ];
 
@@ -43,7 +48,10 @@ function How() {
         <ul>
           {list_items.map((item) => {
             return (
-              <li style={{ listStyleImage: `url(${item.image})` }}>
+              <li
+                key={item.key}
+                style={{ listStyleImage: `url(${item.image})` }}
+              >
                 <h2>{item.heading}</h2>
                 <h3>{item.text}</h3>
               </li>
